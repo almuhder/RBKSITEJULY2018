@@ -1,4 +1,17 @@
 /* main styles */
+
+/* the message div */
+.top {
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 1px 20px 0px #888888; 
+}
+
+
+/* the start message text */
 .message {
     position: relative;
     font-size: 1.3vw;
@@ -6,51 +19,16 @@
     background-color: white;
     width: 100%;
 }
-#logo {
-    max-width: 100px;
-    position: relative;
-    z-index: 1;
-}
-#logo:hover {
-    transform: scale(1.3);     
-}
 
-.btn-purble {
-    background-color: #C20082;
-    color: white;
-    font-size: 0.2vw;
-    margin: 1%;
-}
 
-.btn-outline-purble {
-    border-color: #C20082;
-    font-weight: 500;
-    border-width: 2px;
-    background-color: transparent;
-    color: #fff;
-    font-size: 0.2vw; 
-}
-.btn-outline-purble:hover {
-    box-shadow: 0 1px 20px 0px #C20082;     
-}
-
-li.slide:hover {
-    background-color: #C20082;
-    transform: scaleY(6);
-    border-radius: 1000%    
-}
-.top {
-    position: sticky;
-    top: 0%;
-    text-align: center;
-    z-index: 2;
-    box-shadow: 0 1px 20px 0px #888888; 
-}
+/* the slider div */
 .slider {
     position: absolute;
     top: 0;
     z-index: 0;
 }
+
+/* the nav menu div */
 .menu {
     top: 10%;
     right: 5%;
@@ -59,14 +37,72 @@ li.slide:hover {
 
 }
 
+/* rbk logo */
+#logo {
+    max-width: 100px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#logo:hover {
+    animation:  showUp 1s ease-out;
+    transform: scale(1.3);     
+}
+
+/* the normal button */
+.btn-purble {
+    background-color: #b41a83;
+    color: white;
+    font-size: 0.2vw;
+    margin: 1%;
+}
+
+.btn-purble:hover {
+    animation:  showUp 1s ease-out;
+}
+
+/* the outlined button */
+.btn-outline-purble {
+    border-color: #b41a83;
+    font-weight: 500;
+    border-width: 2px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.2vw; 
+}
+
+
+.btn-outline-purble:hover {
+    animation:  showUp 1s ease-out;
+}
+
+
+.btn-outline-purble:hover {
+    box-shadow: 0 1px 20px 0px #b41a83;     
+}
+
+/* the slide togglers */
+li.slide:hover {
+    background-color: #b41a83;
+    transform: scaleY(6);
+    border-radius: 1000%    
+}
+
+
+
 /* Nav Menu */
+/* nav animation */
 .nav {
     animation:  moveInRight 1s ease-out;
   }
+
+  /* add margin between menu items */
   .nav>li:not(:last-child){
     margin-right: 50px;
   }
   
+/* nav menu items */
   .nav>li>a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -82,6 +118,7 @@ li.slide:hover {
   .nav>li>a:focus,
   .nav>li>a:hover {
     background-color: transparent;
+    color: #b41a83;
   }
   
   .active a::after {
@@ -89,7 +126,7 @@ li.slide:hover {
       display: block;
       width: 100% !important;
       height: 3px;
-      background: #C20082;
+      background: #b41a83;
       transition: width .3s;
   }
   
@@ -98,7 +135,7 @@ li.slide:hover {
       display: block;
       width: 0;
       height: 3px;
-      background: #C20082;
+      background: #b41a83;
       transition: width .3s;
   }
   
@@ -147,7 +184,7 @@ li.slide:hover {
 
 @keyframes showUp {
     0% {
-        opacity: 0;
+        opacity: 0.5;
     }
 
     100% {
