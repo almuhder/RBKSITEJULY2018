@@ -52,10 +52,14 @@
 
 /* the normal button */
 .btn-purble {
+    font-weight: 300;
+    border-width: 2px;
     background-color: #b41a83;
     color: white;
-    font-size: 0.2vw;
-    margin: 1%;
+    font-size: 15px;    
+    border-radius: 10px;
+    border-style: solid;
+    margin: 10px;
 }
 
 .btn-purble:hover {
@@ -65,30 +69,38 @@
 /* the outlined button */
 .btn-outline-purble {
     border-color: #b41a83;
-    font-weight: 500;
+    font-weight: 600;
     border-width: 2px;
     background-color: transparent;
-    color: #fff;
-    font-size: 0.2vw; 
+    color: #b41a83;
+    font-size: 15px;
+    padding: 10% 20%;
+    border-radius: 10px;
+    border-style: solid;
 }
 
 
+
 .btn-outline-purble:hover {
+    box-shadow: 0 1px 20px 0px #b41a83;
     animation:  showUp 1s ease-out;
-}
-
-
-.btn-outline-purble:hover {
-    box-shadow: 0 1px 20px 0px #b41a83;     
 }
 
 /* the slide togglers */
 li.slide:hover {
     background-color: #b41a83;
-    transform: scaleY(6);
-    border-radius: 1000%    
 }
 
+li.slide {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+
+}
+
+li.slide:active {
+    background-color: #b41a83;
+}
 
 
 /* Nav Menu */
@@ -106,7 +118,7 @@ li.slide:hover {
   .nav>li>a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
