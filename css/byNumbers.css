@@ -7,37 +7,38 @@
 }
 
 #rbklogo {
-    width: 170px;
+    width: 160px;
+    cursor: pointer;
 }
 
 #logotxt {
-    font-size: 26px;
+    font-size: 28px;
     text-align: center;
-    font-weight: bold;
 }
 
-.col {
-    text-align: left;
-    font-size: 22px;
-    font-weight: bold;
+.style{
+    text-align: center;
+    font-size: 28px;
+    color: #b41a83;
 }
 
 #nums {
     font-size: 42px;
-    text-align: left;
+    color: #b41a83;
+    text-align: center;
+    font-weight: bold;
 }
 
-#info:after {
-    content: "";
-    background-image: linear-gradient(to bottom, rgb(236, 236, 236), rgb(148, 148, 148), rgb(236, 236, 236));
-    position: absolute;
-    height: 90px;
-    width: 1px;
-    top: 0px;
-    left: 78%;
-    /* border: 0.5px solid #8c8b8b */
+table tr td {
+    border-right: 1px solid rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+    height: 30px;
   }
-
+  
+  table tr td:last-of-type {
+    border: none;
+  }
+ 
   /* text popup */
 
   [data-popup] {
@@ -106,7 +107,7 @@
     display: block;
     width: 0;
     z-index: 1;
-    left: 50%;
+    left: 48%;
 }
 #hrdown.hr:before {
     content:'';
@@ -117,7 +118,7 @@
     display: block;
     width: 0;
     z-index: 1;
-    left: 50%;
+    left: 48%;
 }
 
 /* The HR tag pointing up */
@@ -139,7 +140,7 @@
     width: 0;
     z-index: 1;
     top: -14px;
-    left: 50%;
+    left: 48%;
 }
 #hrup.hr:before {
     content:'';
@@ -151,7 +152,7 @@
     width: 0;
     z-index: 1;
     top: -15px;
-    left: 50%;
+    left: 48%;
 }
 
 /* Second Section  */
@@ -226,3 +227,4 @@
     background-color: transparent;
     color: #FFFFFF;
   }
+
