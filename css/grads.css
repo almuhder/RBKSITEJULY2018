@@ -90,6 +90,12 @@
     bottom: 0;
     right: 0;
 }
+a{
+	color: white;
+}
+a:hover{
+	color: white;
+}
 #GradsImage{
 	width: 20%;
 }
@@ -126,6 +132,7 @@
     text-align: justify;
     line-height: 1;
     height: 60%;
+    color: white;
     overflow: auto;
 }
 ::-webkit-scrollbar {
