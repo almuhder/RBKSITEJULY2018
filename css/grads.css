@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.pink{
+	color: #b41a83;
+	text-align: center;
+	font-size: 5vw;
+}
+.companySlide{
+	width: 100%;
+	padding: 0;
+}
+#LArrow{
+	background-image: url("../imgs/leftArrow.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 60%;
+	width: 20%;
+	margin: 2;
+	padding: 0;
+	float:right;
+	cursor: pointer;
+}
+#RArrow{
+	background-image: url("../imgs/rightArrow.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 60%;
+	width: 20%;
+	margin: 2;
+	padding: 0;
+	background-position: right;
+	cursor: pointer;
+}
+.col{
+	padding: 0;
+}
+.row{
+	width: 100%;
+	margin: 0;
+	height: 100%;
+}
+.companyLogo{
+	margin-top: 5%;
+	max-width: 100%; 
+	padding: 10% 5%;
+}
+.Arrow{
+	background-color: white;
+	z-index: 10;
+}
+.Grads{
+	width: 100%;
+	padding: 0;
+	height: 400px;
+}
+#Stories{
+	background-image: url("../imgs/image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40%;
+	height: 100%;
+	position: relative;
+	border-right: 6px solid white;
+}
+#SuccessStories{
+	height: 25%;
+	background-color: rgba(30, 63, 73,0.7);
+	width: 100%;
+	position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: left; 
+}
+#SuccessStoriesWord{
+	padding: 7%;
+	margin: 0;
+	overflow:hidden;
+	float:left;
+	font-size: 3vh;
+}
+#SuccessStoriesButton{
+	background-color: #b41a83;
+	width: 33.3%;
+	height: 33.3%;
+	text-align: center;
+	padding: 2%;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#GradsImage{
+	width: 20%;
+}
+#GradsUpImage{
+	background-image: url("../imgs/image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 3px solid white;
+	height: 50%;
+}
+#GradsDownImage{
+	background-image: url("../imgs/image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top: 3px solid white;
+	height: 50%;
+}
+#GradsSlide{
+	background-color: #1e3f49;
+	border-left: 6px solid white;
+	width: 40%;
+	padding: 4% 4% 2% 4%;
+}
+#GradStory{
+    text-align: justify;
+    line-height: 1;
+    height: 60%;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+p{
+	margin: 0;
+}
+#line{
+	width: 100%;
+	height: 1.4vh;
+}
+#gradInfo{
+	padding-top: 3%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+}
+#GradImage{
+	background-image: url("../imgs/image.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70%;
+}
+#GradText{
+	position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+#gradName{
+	color: white;
+}
+#gradSpecialized{
+	color: #b41a83;
+}
+#gradCompany{
+	color: #0c2930;
+}
+.carousel{
+	height: 100%;
+	position: relative;
+}
+.carousel-inner{
+	height: 100%;
+}
+.carousel-item{
+	height: 90%;
+}
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 20px;
+  background-color: #0c2930;
+}
+.carousel-indicators .active {
+    background-color: #b41a83;
+}
+#rotation{
+	background-image: url("../imgs/rightArrow.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 30%;
+	height:10%;
+}
