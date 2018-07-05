@@ -78,7 +78,7 @@
 	margin: 0;
 	overflow:hidden;
 	float:left;
-	font-size: 3vh;
+	font-size: 4vh;
 }
 #SuccessStoriesButton{
 	background-color: #b41a83;
@@ -112,6 +112,15 @@
 	border-left: 6px solid white;
 	width: 40%;
 	padding: 4% 4% 2% 4%;
+	position: relative;
+}
+#GradsSlide:before {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0;
+  border-bottom: 80px solid #b41a83;
+  border-left: 80px solid #1e3f49;
+  width: 0;
 }
 #GradStory{
     text-align: justify;
@@ -176,11 +185,4 @@ p{
 }
 .carousel-indicators .active {
     background-color: #b41a83;
-}
-#rotation{
-	background-image: url("../imgs/rightArrow.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 30%;
-	height:10%;
 }
