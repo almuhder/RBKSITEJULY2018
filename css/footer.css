@@ -9,6 +9,12 @@
    text-align: center;
 }
 
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 form {
     margin-top: 40px;
