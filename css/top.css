@@ -1,13 +1,26 @@
 /* main styles */
 
 /* the message div */
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
 .top {
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     position: sticky;
     top: 0%;
     text-align: center;
     z-index: 2;
-    box-shadow: 0 1px 20px 0px #888888; 
+    box-shadow: 10px 0px 20px black;
+}
+
+.wrapper {
+    width: 99%;
+    height: 99%;
+    min-width: 1000px;
+    min-height: 1000px;
 }
 
 
@@ -26,6 +39,7 @@
     position: absolute;
     top: 0;
     z-index: 0;
+    width: 100%;
 }
 
 /* the nav menu div */
@@ -39,16 +53,13 @@
 
 /* rbk logo */
 #logo {
-    max-width: 100px;
+    max-width: 120px;
     position: relative;
     z-index: 1;
     cursor: pointer;
+    margin: 8% 20%;
 }
 
-#logo:hover {
-    animation:  showUp 1s ease-out;
-    transform: scale(1.3);     
-}
 
 /* the normal button */
 .btn-purble {
@@ -62,9 +73,11 @@
     margin: 10px;
 }
 
-.btn-purble:hover {
-    animation:  showUp 1s ease-out;
+
+.slide.active {
+    background-color: #b41a83;
 }
+
 
 /* the outlined button */
 .btn-outline-purble {
@@ -77,18 +90,18 @@
     padding: 10% 20%;
     border-radius: 10px;
     border-style: solid;
+    cursor: pointer;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding: 10%;
 }
 
 
-
-.btn-outline-purble:hover {
-    box-shadow: 0 1px 20px 0px #b41a83;
-    animation:  showUp 1s ease-out;
-}
-
-/* the slide togglers */
-li.slide:hover {
-    background-color: #b41a83;
+.w-100 {
+    width: 99.9% !important;
+    height: 860px !important;
 }
 
 li.slide {
@@ -98,10 +111,9 @@ li.slide {
 
 }
 
-li.slide:active {
-    background-color: #b41a83;
+li.slide:hover {
+    background-color: #fff;
 }
-
 
 /* Nav Menu */
 /* nav animation */
@@ -117,8 +129,8 @@ li.slide:active {
 /* nav menu items */
   .nav>li>a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -142,21 +154,6 @@ li.slide:active {
       transition: width .3s;
   }
   
-  .nav>li>a::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 3px;
-      background: #b41a83;
-      transition: width .3s;
-  }
-  
-  .nav>li>a:hover::after {
-      width: 100%;
-  }
-  
-
-
 
 
 
