@@ -5,13 +5,166 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>RBK Website</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+        crossorigin="anonymous">
         <link rel="stylesheet" href="css/grads.css">
 
     </head>
     <body>
+        <h1 class="pink">Our Grads Hired By</h1>
+        <hr>
+        <br>
+        <div class="companySlide">
+            <div class="row ">
+                <div class="col col-2 Arrow">
+                    <dir id="LArrow" onclick="goLeft()"></dir>
+                </div>
+                <div class="col col-8">
+                    <div class="row justify-content-md-center" id="company1">
+                        <div class="col"><a href="https://www.amazon.com"><img class="companyLogo" src="imgs/amazon.png"></a></div>
+                        <div class="col"><a href="https://www.expedia.com"><img class="companyLogo" src="imgs/Expedia.png"></a></div>
+                        <div class="col"><a href="https://www.altibbi.com"><img class="companyLogo" src="imgs/altibbi.png"></a></div>
+                        <div class="col"><a href="http://en.arabiaweather.com"><img class="companyLogo" src="imgs/arabWeather.png"></a></div>
+                        <div class="col"><a href="https://jo.opensooq.com"><img class="companyLogo" src="imgs/opensooq.png"></a></div>
+                    </div>
+                     <div class="row justify-content-md-center" id="company2" style="display: none;">
+                        <div class="col"><a href="https://www.britecore.com"><img class="companyLogo" src="imgs/britecore.png" ></a></div>
+                        <div class="col"><a href="http://www.ihorizons.com"><img class="companyLogo" src="imgs/ihorizons.png"></a></div>
+                        <div class="col"><a href="http://madfooat.com"><img class="companyLogo" src="imgs/MadfooatCom.png"></a></div>
+                        <div class="col"><a href="https://uae.souq.com"><img class="companyLogo" src="imgs/souq.png"></a></div>
+                        <div class="col"><a href="https://mixeddimensions.com"><img class="companyLogo" src="imgs/mixed-dimensions.png"></a></div>
+                    </div>
+                </div>
+                <div class="col col-2 Arrow">
+                    <dir id="RArrow" onclick="goRight()"></dir>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="Grads">
+            <div class="row">
+                <div  id="Stories">
+                    <div id="SuccessStories">
+                        <div id="SuccessStoriesWord">Success Stories</div>
+                        <a href="#"><div id="SuccessStoriesButton">Read more</div></a>
+                    </div>
+                </div>
+                <div  id="GradsImage">
+                    <div class="row" id="GradsUpImage"></div>
+                    <div class="row" id="GradsDownImage"></div>
+                </div>
+                <div id="GradsSlide">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div id="GradStory">
+                                    <p>RBK imparts essential skill technical and non-technical skills demanded by industry.
+                                    Technical skills include: Javascript and associated frameworks including MongoDB, Express, Angular, NodeJS, Backbone, React and HTML/CSS
+                                    Non-technical skills include: soft skills (communication, collaboration, ethics, professionalism), autonomous (self) learning skills, problem solving skills and critical thinking skills.
+                                    An important dividend of the training is English fluency.</p>
+                                </div>
+                                <br>
+                                <div id="gradInfo">
+                                    
+                                    <img id="line" src="imgs/line.png">
+                                    <br>
+                                    <div class="col col-4" id="GradImage"></div>
+                                    <div class="col col-8" id="GradText">
+                                        <span id="gradName">Samer Salmeh</span><br><span id="gradSpecialized">Softwere Engnear</span><br><span id="gradCompany">BriteCore Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="GradStory">
+                                    <p>RBK imparts essential skill technical and non-technical skills demanded by industry.
+                                    Technical skills include: Javascript and associated frameworks including MongoDB, Express, Angular, NodeJS, Backbone, React and HTML/CSS
+                                    Non-technical skills include: soft skills (communication, collaboration, ethics, professionalism), autonomous (self) learning skills, problem solving skills and critical thinking skills.
+                                    An important dividend of the training is English fluency.</p>
+                                </div>
+                                <br>
+                                <div id="gradInfo">
+                                    
+                                    <img id="line" src="imgs/line.png">
+                                    <br>
+                                    <div class="col col-4" id="GradImage"></div>
+                                    <div class="col col-8" id="GradText">
+                                        <span id="gradName">Samer Salmeh</span><br><span id="gradSpecialized">Softwere Engnear</span><br><span id="gradCompany">BriteCore Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div id="GradStory">
+                                    <p>RBK imparts essential skill technical and non-technical skills demanded by industry.
+                                    Technical skills include: Javascript and associated frameworks including MongoDB, Express, Angular, NodeJS, Backbone, React and HTML/CSS
+                                    Non-technical skills include: soft skills (communication, collaboration, ethics, professionalism), autonomous (self) learning skills, problem solving skills and critical thinking skills.
+                                    An important dividend of the training is English fluency.</p>
+                                </div>
+                                <br>
+                                <div id="gradInfo">
+                                    
+                                    <img id="line" src="imgs/line.png">
+                                    <br>
+                                    <div class="col col-4" id="GradImage"></div>
+                                    <div class="col col-8" id="GradText">
+                                        <span id="gradName">Samer Salmeh</span><br><span id="gradSpecialized">Softwere Engnear</span><br><span id="gradCompany">BriteCore Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+    <script type="text/javascript">
+        var arr=["#company1","#company2"]
+        arrN=0;   
+        function goRight() {
+            var choose=arr[arrN];
+            $(choose).addClass( "animated slideOutRight" );
+            setTimeout(function(){
+                $(choose).removeClass( "animated slideOutRight" );
+                $(choose).hide()
+                arrN++
+                if(arrN > arr.length-1){
+                    arrN=0
+                }
+                choose=arr[arrN];
+                $(choose).show()
+                $(choose).addClass( "animated slideInLeft" );
+            }, 800); 
+            setTimeout(function(){
+                $(choose).removeClass( "animated slideInLeft" );
+            }, 1600) 
+        }
+        function goLeft() {
+            var choose=arr[arrN];
+            $(choose).addClass( "animated slideOutLeft" );
+            setTimeout(function(){
+                $(choose).removeClass( "animated slideOutLeft" );
+                $(choose).hide()
+                arrN--
+                if(arrN < 0){
+                    arrN=arr.length-1
+                }
+                choose=arr[arrN];
+                $(choose).show()
+                $(choose).addClass( "animated slideInRight" );
+            }, 800);
+            setTimeout(function(){
+                $(choose).removeClass( "animated slideInLeft" );
+            }, 1600)  
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
