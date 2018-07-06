@@ -2,6 +2,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
+hr{
+	width: 50%;
+}
 .pink{
 	color: #b41a83;
 	text-align: center;
