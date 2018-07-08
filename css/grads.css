@@ -12,28 +12,33 @@ hr{
 }
 .companySlide{
 	width: 100%;
-	padding: 0;
+	padding: 3% 12%;
+}
+.Arrow{
+	width: 4.16%;
 }
 #LArrow{
 	background-image: url("../imgs/leftArrow.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 60%;
-	width: 20%;
-	margin: 2;
+	height: 100%;
+	width: 70%;
+	margin: 0;
 	padding: 0;
-	float:right;
+	float:left;
+	background-position: center;
 	cursor: pointer;
 }
 #RArrow{
 	background-image: url("../imgs/rightArrow.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 60%;
-	width: 20%;
-	margin: 2;
+	height: 100%;
+	width: 70%;
+	margin: 0;
 	padding: 0;
-	background-position: right;
+	float:right;
+	background-position: center;
 	cursor: pointer;
 }
 .col{
@@ -48,6 +53,7 @@ hr{
 	margin-top: 5%;
 	max-width: 100%; 
 	padding: 10% 5%;
+	margin: 0;
 }
 .Arrow{
 	background-color: white;
@@ -66,6 +72,38 @@ hr{
 	height: 100%;
 	position: relative;
 	border-right: 6px solid white;
+}
+@media screen and (max-width: 600px) {
+	#Stories{
+		width: 100% !important;
+		border-right: 0 !important;
+		border-bottom: 6px solid white !important;
+	}
+	#GradsImage{
+		width: 100% !important;
+		height: 50% !important;
+	}
+	#GradsUpImage{
+		width: 50% !important;
+		height: 100% !important;
+		border-bottom: 0 !important;
+		border-right: 3px solid white !important;
+	}
+	#GradsDownImage{
+		width: 50% !important;
+		height: 100% !important;
+		border-top: 0 !important;
+		border-left: 3px solid white !important;
+	}
+	#GradsSlide{
+		width: 100% !important;
+		height: 100% !important;
+		border-left: 0 !important;
+		border-top: 6px solid white !important;
+	}
+	.companySlide{
+		padding: 3% 0 !important;
+	}
 }
 #SuccessStories{
 	height: 25%;
@@ -101,6 +139,7 @@ a:hover{
 }
 #GradsImage{
 	width: 20%;
+	height: 100%;
 }
 #GradsUpImage{
 	background-image: url("../imgs/image.jpg");
@@ -108,6 +147,7 @@ a:hover{
 	background-repeat: no-repeat;
 	border-bottom: 3px solid white;
 	height: 50%;
+	width: 100%;
 }
 #GradsDownImage{
 	background-image: url("../imgs/image.jpg");
@@ -115,6 +155,7 @@ a:hover{
 	background-repeat: no-repeat;
 	border-top: 3px solid white;
 	height: 50%;
+	width: 100%;
 }
 #GradsSlide{
 	background-color: #1e3f49;
@@ -131,7 +172,7 @@ a:hover{
   border-left: 80px solid #1e3f49;
   width: 0;
 }
-#GradStory{
+#GradSlideTop{
     text-align: justify;
     line-height: 1;
     height: 60%;
@@ -149,25 +190,35 @@ p{
 	width: 100%;
 	height: 1.4vh;
 }
-#gradInfo{
+#gradSlideBottom{
 	padding-top: 3%;
     height: 40%;
     position: absolute;
     bottom: 0;
 }
+#gradInfo{
+	height: 80%;
+	position: relative;
+}
 #GradImage{
 	background-image: url("../imgs/image.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 70%;
+	height: 100%; 
+	width: 30%;
+}
+#GradImage:before{
+    content: "";
+    display: block;
+    padding-top: 25%;
 }
 #GradText{
-	position: absolute;
-    bottom: 0;
-    left: 30%;
+	padding: 0;
+	font-size: 1.5vw;
 }
 #gradName{
 	color: white;
+	font-size: 1.7vw;
 }
 #gradSpecialized{
 	color: #b41a83;
@@ -191,6 +242,7 @@ p{
   height: 10px;
   position: relative;
   top: 20px;
+  margin: 0 5px;
   background-color: #0c2930;
 }
 .carousel-indicators .active {
