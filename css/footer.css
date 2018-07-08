@@ -86,3 +86,17 @@ a:hover {
   height:1px;
   width: 70%;
 }
+
+@media screen and (max-width: 600px) {
+    
+    #fName, #email {
+      margin-bottom: 20px;
+    }
+    form {
+      margin: 25px 0px 0px 0px;
+    }
+    footer {
+      margin: 0px;
+      text-align: center;
+    }
+}
