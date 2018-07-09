@@ -100,9 +100,13 @@ hr{
 		height: 100% !important;
 		border-left: 0 !important;
 		border-top: 6px solid white !important;
+		padding: 10% 10% 5% 10% !important;
 	}
 	.companySlide{
 		padding: 3% 0 !important;
+	}
+	#GradText{
+		font-size: medium !important;
 	}
 }
 #SuccessStories{
@@ -112,14 +116,14 @@ hr{
 	position: absolute;
     bottom: 0;
     color: white;
-    text-align: left; 
+    display: flex;
+    align-items: center;
 }
 #SuccessStoriesWord{
 	padding: 7%;
 	margin: 0;
-	overflow:hidden;
-	float:left;
-	font-size: 4vh;
+    font-size: x-large;
+    width: fit-content;
 }
 #SuccessStoriesButton{
 	background-color: #b41a83;
@@ -200,25 +204,21 @@ p{
 	height: 80%;
 	position: relative;
 }
-#GradImage{
-	background-image: url("../imgs/image.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
+#GradPicture{
 	height: 100%; 
-	width: 30%;
-}
-#GradImage:before{
-    content: "";
-    display: block;
-    padding-top: 25%;
+	float: left;
 }
 #GradText{
-	padding: 0;
-	font-size: 1.5vw;
+	padding-left: 4%;
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    line-height: 0.85;
+    width: fit-content;
+    font-size: small;
 }
 #gradName{
 	color: white;
-	font-size: 1.7vw;
 }
 #gradSpecialized{
 	color: #b41a83;
