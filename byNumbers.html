@@ -12,25 +12,40 @@
     </head>
     <body>
 
-        <div id="by_numbers" class="container-fluid"><br>
-            <table class="container-fluid">
+        <div id="by_numbers_Des">   
+            <table class="container-fluid"><br>
                 <tr>
-            <div class="container-fluid">
-            <td> <div id="logotxt" class="style"><img onclick="window.open('http://rbk.org')" id="rbklogo" src="./images/znewlogo.png"><br>&nbsp&nbsp&nbsp&nbspBy Numbers &nbsp&nbsp&nbsp&nbsp</div><br></td>
-            <td><div  class="style" ><span data-popup="The number of Applicants applied until cohort 4">&nbspApplicants&nbsp</span><br><p id="nums">3690</p></div></td>
-            <td><div id="info" class="style"><span data-popup="The hiring rate of RBK's graduates">Hiring Rate</span><br><p id="nums">97%</p></div></td>
-            <td><div id="info" class="style"><span data-popup="Total number of RBK's graduates">&nbsp&nbsp Alumni &nbsp</span><br><p id="nums">105</p></div></td>
-            <td><div class="style"><span data-popup="Total programming hours for all cohorts">Programming Hours</span><br><p id="nums">10K</p></div></td>
+            <td> <div id="logotxt" class="style"><img onclick="window.open('http://rbk.org')" id="rbklogo" src="./images/znewlogo.png"><br>&nbsp By Numbers &nbsp</div><br></td>
+            <td><div class="style"><span data-popup="The number of Applicants applied until cohort 4">&nbspApplicants&nbsp</span><p id="nums">3690</p></div></td>
+            <td><div id="info" class="style"><span data-popup="The hiring rate of RBK's graduates">Hiring Rate</span><p id="nums">97%</p></div></td>
+            <td><div id="info" class="style"><span data-popup="Total number of RBK's graduates">&nbsp&nbspAlumni&nbsp&nbsp</span><p id="nums">105</p></div></td>
+            <td><div class="style"><span data-popup="Total programming hours for all cohorts">Programming Hours</span><p id="nums">10K</p></div></td>
             </tr>
-        </div>
-        </table><br>
+        
+        </table>
+    </div><br>
 
+        <div id="by_numbers_Mob">   
+            <table class="container-fluid">
+                <tr class="container-fluid" >
+                    <div class="container-fluid">
+                        <div id="logotxt" class="style"><img onclick="window.open('http://rbk.org')" id="rbklogo" src="./images/znewlogo.png"><br>By Numbers</div><br><br>
+                </tr>
+                <tr>
+                    <td><div  class="style" ><span data-popup="The number of Applicants applied until cohort 4">&nbsp &nbsp &nbsp Applicants &nbsp &nbsp&nbsp</span><p id="nums">3690</p></div></td>
+                    <td><div id="info" class="style"><span data-popup="The hiring rate of RBK's graduates">Hiring Rate</span><p id="nums">97%</p></div></td>
+                </tr>
+                <tr>
+                    <td><div id="info" class="style"><span data-popup="Total number of RBK's graduates">&nbsp&nbsp &nbsp Alumni  &nbsp &nbsp&nbsp</span><p id="nums">105</p></div></td>
+                    <td><div class="style"><span data-popup="Total programming hours for all cohorts">Programming Hours</span><p id="nums">10K</p></div></td>
+                </tr>
+            
+            </table><br><br>
         </div>
-
 
         <div id="first_bootcamp" class="container-fluid">
             
-                <center><div id="hrup" class="hr"></div> <br><h3>The First Code Boot Camp In The Arab world</h3><br>
+                <center><div id="hrup" class="hr"></div> <br><h3 id="FBK">The First Code Boot Camp In The Arab world</h3><br>
                    
                 <div id="hrdown" class="hr"></div>
                 </center>
@@ -42,21 +57,19 @@
                 <h1 id="firsttxt">Immersive Software Engineering</h1>
                 <h1 id="sectxt"> in 16 Weeks</h1>
                 <button onclick="window.open('http://rbk.org')" id="learnbtn" class="btn btn-default">Learn About The Program &nbsp <i class="fas fa-caret-right"></i></button><br><br>
-            </center>
+            </center><br>
         </div>
 
 
-        <div id="get_started"><br>
+        <div id="get_started" class="container-fluid"><br>
             <center>
                 <div class="ut-hr-txt">
                         <hr>
-                        <span>&nbsp&nbsp&nbsp Ready To Get Started &nbsp&nbsp&nbsp</span>
+                        <span>Ready To Get Started</span>
                       </div>
                       <button onclick="window.open('http://rbk.org/apply/public/index.php')" id="applybtn" class="btn btn-default">Apply Now &nbsp <i class="fas fa-caret-right"></i></button><br><br>
-                      
                 <br>
             </center>
-
         </div>
 
 
@@ -66,4 +79,23 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script> // script for expand/collapse
+        var expandCollapse = function(){
+            if ( $(window).width() < 718 ) {
+                $(function(){
+                    $('#by_numbers_Des').css('display', 'none');
+                    $('#by_numbers_Mob').css('display', 'initial');
+                });
+            }
+            else {
+                $(function(){
+                    $('#by_numbers_Des').css('display', 'inline');
+                    $('#by_numbers_Mob').css('display', 'none');
+                });
+            }
+        }
+        $(document).ready(expandCollapse);
+        $(window).resize(expandCollapse);
+    </script>
 </html>

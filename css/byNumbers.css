@@ -1,30 +1,39 @@
 /* First Section */
 
-#by_numbers {
+#by_numbers_Des {
     font-family: 'Montserrat', sans-serif !important;
     background-color: #efefef;
     color: #b41a83;
-    font-size: 24px;
+    font-size: 20px;
+    display: none;
+}
+
+#by_numbers_Mob {
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #efefef;
+    color: #b41a83;
+    font-size: 20px;
+    display: none;
 }
 
 #rbklogo {
-    width: 160px;
+    width: 135px;
     cursor: pointer;
 }
 
 #logotxt {
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
 }
 
 .style{
     text-align: center;
-    font-size: 28px;
+    font-size: 19px;
     color: #b41a83;
 }
 
 #nums {
-    font-size: 42px;
+    font-size: 22px;
     color: #b41a83;
     text-align: center;
     font-weight: bold;
@@ -40,9 +49,9 @@ table tr td {
     border: none;
   }
  
-  /* text popup */
 
- 
+  /* Text popup */
+
   [data-popup] {
     position: relative;
   }
@@ -94,9 +103,9 @@ table tr td {
   }
   
 
-  /* hr tag code */
-
+ /* hr tag code */
  /* The hr tag pointing down */
+ 
 #hrdown.hr {
     width:100%;
     height: 1px;
@@ -114,7 +123,7 @@ table tr td {
     display: block;
     width: 0;
     z-index: 1;
-    left: 48%;
+    left: 49%;
 }
 
 #hrdown.hr:before {
@@ -126,10 +135,10 @@ table tr td {
     display: block;
     width: 0;
     z-index: 1;
-    left: 48%;
+    left: 49%;
 }
 
-/* The HR tag pointing up */
+/* The hr tag pointing up */
 
 #hrup.hr {
     width:100%;
@@ -149,7 +158,7 @@ table tr td {
     width: 0;
     z-index: 1;
     top: -14px;
-    left: 48%;
+    left: 49%;
 }
 
 #hrup.hr:before {
@@ -162,13 +171,18 @@ table tr td {
     width: 0;
     z-index: 1;
     top: -15px;
-    left: 48%;
+    left: 49%;
 }
 
 /* Second Section  */
+
 #first_bootcamp {
     background-color: #b41a83;
     color: #FFFFFF;
+}
+
+#FBK {
+    font-size: 20px;
 }
 
 /* Third Section  */
@@ -179,16 +193,18 @@ table tr td {
 
 #firsttxt {
     color: #b41a83;
+    font-size: 25px;
 }
 
 #sectxt {
-    color: #FFFFFF
+    color: #FFFFFF;
+    font-size: 25px;
 }
 
 #learnbtn {
-    width: 330px;
+    width: 300px;
     height: 53px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 0%;
     border-width: 2px;
     border-color: #b41a83;
@@ -200,13 +216,13 @@ table tr td {
 
 #get_started {
     background-color: #b41a83;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
  /* hr tag and ready text styling*/
 .ut-hr-txt {
     color: #FFFFFF;
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
   }
   
@@ -215,7 +231,7 @@ table tr td {
     height: 2px;
     margin-top: 0.7em !important;
     margin-bottom: 0px !important;
-    width: 80%;
+    width: 85%;
   }
   
   .ut-hr-txt span {
@@ -228,7 +244,7 @@ table tr td {
   }
 
   #applybtn {
-    width: 330px;
+    width: 300px;
     height: 53px;
     font-size: 20px;
     border-radius: 0%;
@@ -237,4 +253,3 @@ table tr td {
     background-color: transparent;
     color: #FFFFFF;
   }
-
