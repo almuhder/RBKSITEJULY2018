@@ -1,0 +1,218 @@
+/* main styles */
+
+/* the message div */
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.top {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 10px 0px 20px black;
+}
+
+.wrapper {
+    width: 99%;
+    height: 99%;
+    min-width: 1000px;
+    min-height: 1000px;
+}
+
+
+/* the start message text */
+.message {
+    position: relative;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}
+
+
+/* the slider div */
+.slider {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+/* the nav menu div */
+.menu {
+    top: 10%;
+    right: 5%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+/* rbk logo */
+#logo {
+    max-width: 120px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin: 8% 20%;
+}
+
+
+/* the normal button */
+.btn-purble {
+    font-weight: 300;
+    border-width: 2px;
+    background-color: #b41a83;
+    color: white;
+    font-size: 15px;    
+    border-radius: 10px;
+    border-style: solid;
+    margin: 10px;
+}
+
+
+.slide.active {
+    background-color: #b41a83;
+}
+
+
+/* the outlined button */
+.btn-outline-purble {
+    border-color: #b41a83;
+    font-weight: 600;
+    border-width: 2px;
+    background-color: transparent;
+    color: #b41a83;
+    font-size: 15px;
+    padding: 10% 20%;
+    border-radius: 10px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding: 10%;
+}
+
+
+.w-100 {
+    width: 99.9% !important;
+    height: 860px !important;
+}
+
+li.slide {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+
+}
+
+li.slide:hover {
+    background-color: #fff;
+}
+
+/* Nav Menu */
+/* nav animation */
+.nav {
+    animation:  moveInRight 1s ease-out;
+  }
+
+  /* add margin between menu items */
+  .nav>li:not(:last-child){
+    margin-right: 50px;
+  }
+  
+/* nav menu items */
+  .nav>li>a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 0;
+    z-index: 9;
+    transition: all .3s;
+  }
+  
+  .nav>li>a:focus,
+  .nav>li>a:hover {
+    background-color: transparent;
+    color: #b41a83;
+  }
+  
+  .active a::after {
+      content: '';
+      display: block;
+      width: 100% !important;
+      height: 3px;
+      background: #b41a83;
+      transition: width .3s;
+  }
+  
+
+
+
+/* Animation */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+        bottom: -585px;
+    }
+
+    80% {
+        bottom: -80;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: -150;
+    }
+}
