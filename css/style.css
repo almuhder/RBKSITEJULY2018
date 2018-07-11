@@ -10,6 +10,7 @@ body {
 }
 .main-nav{
 	position: absolute;
+	height: 95% !important;
 }
 .bg-light{
 	float: right;
@@ -17,10 +18,15 @@ body {
 	z-index: 1 !important;
 	animation:  moveInRight 1s ease-out !important;
 }
+.bg-light.bg-dark{
+	background-color: #000000a3 !important;
+}
 @media screen and (max-width: 767px) {
+	.main-nav{
+		height: 60% !important;
+	}
 	.bg-light{
 		padding: 0 !important;
-		background-color: #000000a3 !important;
 		margin-top: 10px !important;
 	}
 	.btn-outline-purble{
@@ -36,6 +42,12 @@ body {
 	}
 	.message{
 		padding-top: 10px !important;
+	}
+	#logo{
+		margin: 10px 20% !important;
+	}
+	.nav-item{
+		color: white !important;
 	}
 }
 .navbar-light .navbar-nav .nav-link {
@@ -86,7 +98,7 @@ body {
     position: relative;
     z-index: 1;
     cursor: pointer;
-    margin: 8% 20%;
+    margin: 5px 20%;
 }
 
 
@@ -106,7 +118,9 @@ body {
     background-color: #b41a83;
 }
 
-
+.navbar-light .navbar-toggler-icon{
+	background-image: url("../images/Hamburger_icon.png") !important;
+}
 /* the outlined button */
 .btn-outline-purble {
     border-color: #b41a83;
@@ -470,7 +484,13 @@ li.slide:hover {
 }
 .companySlide{
 	width: 100%;
-	padding: 0% 12% 3% 12%;
+	padding-bottom: 3%;
+}
+.empty-space{
+	min-width: 8.33%;
+	min-height: 100%;
+	background-color: white;
+	z-index: 10;
 }
 .Arrow{
 	width: 4.16%;
