@@ -10,6 +10,7 @@
         integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
@@ -23,9 +24,7 @@
                     </button>
                 </span>
             </h5>
-        </div>
-        <div class="wrapper">
-            <!-- the nav bar menu -->
+             <!-- the nav bar menu -->
             <div class="row main-nav">
             <!-- rbk logo -->
                 <div class="col-2">
@@ -53,6 +52,9 @@
 					</nav>
                 </div>
             </div>
+        </div>
+        <div class="wrapper">
+           
                 
             <!-- photos slider -->
             <div class="slider">
@@ -347,10 +349,9 @@
         <div class="foot">
 	        <form role="form" data-toggle="validator">
 		        <div class="form-group">
-		            <center><h2 class="pink">Contact us</h2>
+		            <center><h1 class="pink">Contact us</h1>
 		                <hr width="40%">
-		                <p>If You have questions or just want to say "Hi",send us a message!</p>
-		                <p>We'd love to hear from you</p>
+		                <p class="questions">If You have questions or just want to say "Hi",send us a message!<br>We'd love to hear from you</p>
 		            </center>
 		            <div class="container">
 		                <div class="row">
@@ -383,46 +384,60 @@
 
 		    <footer>
 		        <div class="row top-margin">
-		            <div class="col-sm-2"></div>
-
-		            <div id="footerLink1" class="col-sm-2">
-		              <h6>RBK eXtreme</h6>
+		            <div class="col col-sm-1"></div>
+		            <div id="footerLink1" class="col col-sm-2">
+		              	<h6>RBK eXtreme</h6>
 		                <a href="#"><p>About<br></a>
 		                <a href="#">Admissions<br></a>
 		                <a href="#">The Program<br></a>
-		                <a href="#">Outcomes<br></a>                       
+		                <a href="#">Outcomes<br></a>          
 		                <a href="#">Supporters</p></a>
 		            </div>
-		            <div id="footerLink2" class="col-sm-2">
-		              <h6>RBK eXtreme</h6>
+		            <div id="footerLink2" class="col col-sm-2">
+		              	<h6>RBK eXtreme</h6>
 		                <a href="#"><p>About<br></a>
 		                <a href="#">Admissions<br></a>
 		                <a href="#">The Program<br></a>
-		                <a href="#">Outcomes<br></a>                       
+		                <a href="#">Outcomes<br></a>       
 		                <a href="#">Supporters</p></a>
 		            </div>
-		            <div id="footerLink3" class="col-sm-2">
-		              <h6>RBK eXtreme</h6>
+		            <div id="footerLink3" class="col col-sm-2">
+		              	<h6>RBK eXtreme</h6>
 		                <a href="#"><p>About<br></a>
 		                <a href="#">Admissions<br></a>
 		                <a href="#">The Program<br></a>
-		                <a href="#">Outcomes<br></a>                       
+		                <a href="#">Outcomes<br></a>
 		                <a href="#">Supporters</p></a>
 		            </div>
-		            <div id="footerConnected" class="col-sm-4"><br>
+		            <div id="footerConnected" class="col col-sm-4">
 		                <h6>Get Connected</h6>
-		                <a href="#"><i class="fab fa-facebook-f"></i></a>
-		                <a href="#"><i class="fab fa-twitter"></i></a>
-		                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-		                <a href="#"><i class="fab fa-youtube"></i></a>
-		                <a href="#"><i class="fab fa-instagram"></i></a>
-		                <br><br>
+		                <div class="icons">
+			                <a href="#">
+			                	<i class="fab fa-facebook-f"></i>
+			                </a>
+			                <a href="#">
+			                	<i class="fab fa-twitter"></i>
+			                </a>
+			                <a href="#">
+			                	<i class="fab fa-linkedin-in"></i>
+			                </a>
+			                <a href="#">
+			                	<i class="fab fa-youtube"></i>
+			                </a>
+			                <a href="#">
+			                	<i class="fab fa-instagram"></i>
+			                </a>
+		                </div>
 		                <p>Mobile:<span class="pink"> +962 797 771 441</span><br>
 		               Email:<span class="pink"> info@rbk.org</span></p>
 		            </div>
+		            <div class="col col-sm-1"></div>
 		        </div>
-		        <center><div class="horizontal-line"></div></center><br>
-		        <center><p>© COPYRIGHT 2018 RBK eXtreme.<span class="pink">Terms&Conditions</span></p><br>
+		        <center>
+		        	<div class="horizontal-line"></div>
+		        </center>
+		        <center>
+		        	<p>© COPYRIGHT 2018 RBK eXtreme.<span class="pink">Terms&Conditions</span></p>
 		        </center>
 		   </footer>
 		</div>
@@ -430,6 +445,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Ahmad -->
+    <script type="text/javascript">
+		$(document).ready(function(){
+		  $(window).scroll(function(){
+		  	var scroll = $(window).scrollTop();
+			  if (scroll > 10) {
+			    $(".main-nav").css("background-color" , "white");
+			  }
+
+			  else{
+				  $(".main-nav").css("background-color" , "transparent");  	
+			  }
+		  })
+		})
+    </script>
     <!-- hamza -->
     <script> // script for expand/collapse
         var expandCollapse = function(){
