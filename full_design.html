@@ -186,10 +186,12 @@
             <hr>
             <div class="companySlide">
                 <div class="row ">
+                	<div class="empty-space">
+                    </div>
                     <div class="Arrow">
                         <dir id="LArrow" onclick="goLeft()"></dir>
                     </div>
-                    <div class="col col-11 align-self-center">
+                    <div class="col col-9 align-self-center">
                         <div class="row justify-content-md-center" id="company1">
                             <div class="col"><a href="https://www.amazon.com"><img class="companyLogo" src="images/company/amazon.png"></a></div>
                             <div class="col"><a href="https://www.expedia.com"><img class="companyLogo" src="images/company/Expedia.png"></a></div>
@@ -207,6 +209,8 @@
                     </div>
                     <div class=" Arrow">
                         <dir id="RArrow" onclick="goRight()"></dir>
+                    </div>
+                    <div class="empty-space">
                     </div>
                 </div>
             </div>
@@ -448,17 +452,25 @@
     <!-- Ahmad -->
     <script type="text/javascript">
 		$(document).ready(function(){
-		  $(window).scroll(function(){
-		  	var scroll = $(window).scrollTop();
-			  if (scroll > 10) {
-			    $(".main-nav").css("background-color" , "white");
-			  }
+		  	$(window).scroll(function(){
+		  		var scroll = $(window).scrollTop();
+			  	if (scroll > 10) {
+			    	$(".main-nav").css("background-color" , "white");
+			    	$(".nav-item").css("color" , "black");
+			    	$(".message").css("box-shadow" , "0px 3px 10px  #00000038");
+			    	$(".message").css("z-index" , "1");
+			  	}
 
-			  else{
-				  $(".main-nav").css("background-color" , "transparent");  	
-			  }
-		  })
-		})
+			  	else{
+				  	$(".main-nav").css("background-color" , "transparent");
+				  	$(".nav-item").css("color" , "white");
+				  	$(".message").css("box-shadow" , "none");  	
+			  	}
+		  	})
+    		$(".navbar-toggler").click(function () {
+   				$(".bg-light").toggleClass("bg-dark");
+			});
+    	})		
     </script>
     <!-- hamza -->
     <script> // script for expand/collapse
