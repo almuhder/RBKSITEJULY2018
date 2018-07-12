@@ -543,13 +543,28 @@ li.slide:hover {
 	height: 400px;
 }
 #Stories{
-	background-image: url("../images/image.jpg");
-	background-size: cover;
+	background-image: url("../images/success_stories_bg.jpg");
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	width: 40%;
 	height: 100%;
 	position: relative;
 	border-right: 6px solid white;
+}
+@media screen and (max-width: 1200px) {
+	.Our-Grads{
+		height: 450px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.Our-Grads{
+		height: 400px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.Our-Grads{
+		height: 350px;
+	}
 }
 @media screen and (max-width: 600px) {
 	.Grads{
@@ -627,16 +642,16 @@ li.slide:hover {
 	height: 100%;
 }
 #GradsUpImage{
-	background-image: url("../images/image.jpg");
-	background-size: cover;
+	background-image: url("../images/success_stories_sm_up.jpg");
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	border-bottom: 3px solid white;
 	height: 50%;
 	width: 100%;
 }
 #GradsDownImage{
-	background-image: url("../images/image.jpg");
-	background-size: cover;
+	background-image: url("../images/success_stories_sm_down.jpg");
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	border-top: 3px solid white;
 	height: 50%;
@@ -659,7 +674,7 @@ li.slide:hover {
 }
 #GradSlideTop{
     text-align: justify;
-    line-height: 1;
+    line-height: 1.3;
     height: 60%;
     color: white;
     overflow: auto;
